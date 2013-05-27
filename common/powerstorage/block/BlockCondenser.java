@@ -2,6 +2,7 @@ package powerstorage.block;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
+import net.minecraft.client.renderer.texture.IconRegister;
 
 /**
  * PowerStorage
@@ -22,6 +23,12 @@ public  class BlockCondenser extends Block {
                 super(id,  Material.iron);
                 
                 
+        }
+        
+        @Override
+        public void registerIcons(IconRegister par1IconRegister)
+        {
+             this.blockIcon = par1IconRegister.registerIcon("powerstorage:condenser");
         }
         
        

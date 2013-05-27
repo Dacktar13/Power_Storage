@@ -6,6 +6,7 @@ import powerstorage.PowerStorage;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockFluid;
 import net.minecraft.block.material.Material;
+import net.minecraft.client.renderer.texture.IconRegister;
 import net.minecraft.world.World;
 import net.minecraftforge.liquids.ILiquid;
 
@@ -32,6 +33,12 @@ public class BlockMercuryLiquidMoving extends BlockFluid implements ILiquid {
         setLightOpacity(3);
     }
 
+    @Override
+    public void registerIcons(IconRegister par1IconRegister)
+    {
+         this.blockIcon = par1IconRegister.registerIcon("powerstorage:mercuryLiquidMoving");
+    }
+    
     @Override
     public int getRenderType() {
         return PowerStorage.mercuryLiquidModel;

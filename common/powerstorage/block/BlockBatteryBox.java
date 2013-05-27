@@ -6,6 +6,7 @@ import powerstorage.PowerStorage;
 //import powerstorage.client.renderer.tileentity.TileEntityBatteryBox;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
+import net.minecraft.client.renderer.texture.IconRegister;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.item.EntityItem;
 import net.minecraft.entity.player.EntityPlayer;
@@ -39,7 +40,11 @@ public class BlockBatteryBox extends Block{
     int sideTexture;
 
              
-       
+    @Override
+    public void registerIcons(IconRegister par1IconRegister)
+    {
+         this.blockIcon = par1IconRegister.registerIcon("powerstorage:batteryBox");
+    }
         
         @Override
         public boolean onBlockActivated(World world, int x, int y, int z,

@@ -1,6 +1,6 @@
 package powerstorage.item;
 
-import powerstorage.core.proxy.CommonProxy;
+import net.minecraft.client.renderer.texture.IconRegister;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 
@@ -16,7 +16,9 @@ public class ItemMercuryIngot extends Item {
 
     }
 
-    public String getTextureFile() {
-        return CommonProxy.TEXTURE_ITEMS;
+    @Override
+    public void registerIcons(IconRegister iconRegister)
+    {
+        this.itemIcon  = iconRegister.registerIcon("powerstorage:mercuryIngot");
     }
 }

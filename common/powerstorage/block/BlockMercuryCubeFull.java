@@ -2,6 +2,7 @@ package powerstorage.block;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
+import net.minecraft.client.renderer.texture.IconRegister;
 
 /**
  * PowerStorage
@@ -21,6 +22,12 @@ public class BlockMercuryCubeFull extends Block {
     public BlockMercuryCubeFull(int id) {
         super(id, Material.iron);
 
+    }
+    
+    @Override
+    public void registerIcons(IconRegister par1IconRegister)
+    {
+         this.blockIcon = par1IconRegister.registerIcon("powerstorage:mercuryCubeFull");
     }
 
 }
