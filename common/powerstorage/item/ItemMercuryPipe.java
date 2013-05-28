@@ -26,6 +26,7 @@ public class ItemMercuryPipe extends Pipe {
             super(new PipeTransportPower(), new PipeLogic(), itemID);
             
             ((PipeTransportPower) transport).powerResistance = 0.000;
+            
     }
 
     @Override

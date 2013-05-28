@@ -10,6 +10,7 @@ import powerstorage.lib.BlockIds;
 import powerstorage.lib.Strings;
 
 import cpw.mods.fml.common.registry.GameRegistry;
+import cpw.mods.fml.common.registry.LanguageRegistry;
 
 /**
  * PowerStorage
@@ -31,6 +32,7 @@ public class ModBlocks {
     public static Block condenser;
     public static Block mercuryCubeEmpty;
     public static Block mercuryCubeFull;
+    public static Block mercuryEngine;
 
     public static void init() {
 
@@ -42,14 +44,24 @@ public class ModBlocks {
         mercuryCubeEmpty = new BlockMercuryCubeEmpty(
                 BlockIds.MERCURY_CUBE_EMPTY);
         mercuryCubeFull = new BlockMercuryCubeFull(BlockIds.MERCURY_CUBE_FULL);
+        //mercuryEngine = new BlockMercuryEngine(BlockIds.MERCURY_ENGINE);
 
+      
         GameRegistry.registerBlock(mercuryOre, Strings.MERCURY_ORE_NAME);
+        LanguageRegistry.addName(mercuryOre, "Mercury Ore");
         GameRegistry.registerBlock(batteryBox, Strings.BATTERTY_BOX_NAME);
+        LanguageRegistry.addName(batteryBox, "Battery Box");
         GameRegistry.registerBlock(condenser, Strings.CONDENSER_NAME);
+        LanguageRegistry.addName(condenser, "Condenser");
         GameRegistry.registerBlock(mercuryCubeEmpty, Strings.MERCURY_CUBE_EMPTY_NAME);
+        LanguageRegistry.addName(mercuryCubeEmpty, "Mercury Cube Empty");
         GameRegistry.registerBlock(mercuryCubeFull, Strings.MERCURY_CUBE_FULL_NAME);
+        LanguageRegistry.addName(mercuryCubeFull, "Mercury Cube Full");
         GameRegistry.registerBlock(mercuryLiquidMoving, Strings.MERCURY_LIQUID_MOVING_NAME);
+        LanguageRegistry.addName(mercuryLiquidMoving, "Mercury Liquid Moving");
         GameRegistry.registerBlock(mercuryLiquidStill, Strings.MERCURY_LIQUID_STILL_NAME);
+        LanguageRegistry.addName(mercuryLiquidStill, "Mercury Liquid Still");
+        //GameRegistry.registerBlock(mercuryEngine, String.MERCURY_ENGINE_NAME);
   
         }
 
@@ -80,6 +92,14 @@ public class ModBlocks {
                 new Object[] { "GgG", "gmg", "GgG", 
             Character.valueOf('m'), ModItems.mercuryIngot, 
             Character.valueOf('G'), Item.ingotGold, 
+            Character.valueOf('g'), Block.glass });
+        
+     // Mercury Engine
+        GameRegistry.addRecipe(new ItemStack(mercuryCubeEmpty),
+                new Object[] { "mmm", " g ", "GpG", 
+            Character.valueOf('m'), ModItems.mercuryIngot, 
+            Character.valueOf('G'), BuildCraftCore.goldGearItem,
+            Character.valueOf('p'), Block.pistonBase,
             Character.valueOf('g'), Block.glass });
         
     }

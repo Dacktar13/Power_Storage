@@ -8,6 +8,7 @@ import powerstorage.block.ModBlocks;
 import powerstorage.lib.ItemIds;
 
 import cpw.mods.fml.common.registry.GameRegistry;
+import cpw.mods.fml.common.registry.LanguageRegistry;
 
 /**
  * PowerStorage
@@ -34,6 +35,14 @@ public class ModItems {
         mercuryIngot = new ItemMercuryIngot(ItemIds.MERCURY_INGOT);
         bucketMercury = new ItemBucketMercury(ItemIds.BUCKET_MERCURY);
 
+        
+        LanguageRegistry.addName(mercuryPipe, "Mercury Pipe");
+        LanguageRegistry.addName(mercuryIngot, "Mercury Ingot");
+        LanguageRegistry.addName(bucketMercury, "Mercury Bucket");
+        
+        
+        
+        
        
     }
 

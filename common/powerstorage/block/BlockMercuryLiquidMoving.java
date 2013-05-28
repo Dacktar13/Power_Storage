@@ -3,6 +3,7 @@ package powerstorage.block;
 import java.util.Random;
 
 import powerstorage.PowerStorage;
+import powerstorage.core.CreativeTabPowerStorage;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockFluid;
 import net.minecraft.block.material.Material;
@@ -31,6 +32,7 @@ public class BlockMercuryLiquidMoving extends BlockFluid implements ILiquid {
 
         setHardness(100F);
         setLightOpacity(3);
+        setCreativeTab(CreativeTabPowerStorage.tabPowerStorage);
     }
 
     @Override
@@ -41,7 +43,7 @@ public class BlockMercuryLiquidMoving extends BlockFluid implements ILiquid {
     
     @Override
     public int getRenderType() {
-        return PowerStorage.mercuryLiquidModel;
+        return PowerStorage.MERCURYLIQUIDMODEL;
     }
 
     private void updateFlow(World world, int i, int j, int k) {

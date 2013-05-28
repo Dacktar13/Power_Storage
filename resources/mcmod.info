@@ -4,6 +4,7 @@
   "name": "Power Storage",
   "description": "Store Buildcraft or IC2 power and retrive the disired type back!",
   "version": "0.2.1",
+  "logoFile": "/powerstorage_logo.png",
   "url": "www.github.com/dacktar/power_storage/",
   "updateUrl": "",
   "authorList": [

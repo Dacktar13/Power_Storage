@@ -2,10 +2,11 @@ package powerstorage.block;
 
 import java.util.Random;
 
+import powerstorage.core.CreativeTabPowerStorage;
+
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IconRegister;
-import net.minecraft.creativetab.CreativeTabs;
 
 /**
  * PowerStorage
@@ -27,7 +28,7 @@ public class BlockMercuryOre extends Block {
                 setHardness(4.0F); // 33% harder than diamond
                 setStepSound(Block.soundStoneFootstep);
                 setUnlocalizedName("mercuryOre");
-                setCreativeTab(CreativeTabs.tabBlock);
+                setCreativeTab(CreativeTabPowerStorage.tabPowerStorage);
         }
         
         @Override

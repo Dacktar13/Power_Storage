@@ -1,7 +1,7 @@
 package powerstorage.item;
 
+import powerstorage.core.CreativeTabPowerStorage;
 import net.minecraft.client.renderer.texture.IconRegister;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 
 public class ItemMercuryIngot extends Item {
@@ -11,7 +11,7 @@ public class ItemMercuryIngot extends Item {
         
         // Constructor Config
         maxStackSize = 64;
-        setCreativeTab(CreativeTabs.tabMisc);
+        setCreativeTab(CreativeTabPowerStorage.tabPowerStorage);
         setUnlocalizedName("mercuryIngot");
 
     }

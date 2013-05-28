@@ -1,5 +1,6 @@
 package powerstorage.block;
 
+import powerstorage.core.CreativeTabPowerStorage;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IconRegister;
@@ -21,7 +22,7 @@ public  class BlockCondenser extends Block {
 
         public BlockCondenser (int id) {
                 super(id,  Material.iron);
-                
+                setCreativeTab(CreativeTabPowerStorage.tabPowerStorage);
                 
         }
         

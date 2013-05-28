@@ -94,7 +94,7 @@ public class PowerStorage {
         ModBlocks.initBlockRecipes();
         ModItems.initItemRecipes();
         
-        initWorldGen();
+        //initWorldGen();
 
     }
 
@@ -116,6 +116,6 @@ public class PowerStorage {
         GameRegistry.registerWorldGenerator(new PSWorldGen());
     }
 
-    public static int mercuryLiquidModel;
+    public static int MERCURYLIQUIDMODEL;
 
 }

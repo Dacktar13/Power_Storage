@@ -1,5 +1,6 @@
 package powerstorage.block;
 
+import powerstorage.core.CreativeTabPowerStorage;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IconRegister;
@@ -21,6 +22,7 @@ public class BlockMercuryCubeFull extends Block {
 
     public BlockMercuryCubeFull(int id) {
         super(id, Material.iron);
+        setCreativeTab(CreativeTabPowerStorage.tabPowerStorage);
 
     }
     

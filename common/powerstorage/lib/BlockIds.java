@@ -20,6 +20,7 @@ public class BlockIds {
     public static int CONDENSER_DEFAULT = 2504;
     public static int MERCURY_CUBE_EMPTY_DEFAULT = 2505;
     public static int MERCURY_CUBE_FULL_DEFAULT = 2506;
+    public static int MERCURY_ENGINE_DEFAULT = 2507;
     
     /* Current block ids */
     public static int MERCURY_ORE;
@@ -29,5 +30,6 @@ public class BlockIds {
     public static int CONDENSER;
     public static int MERCURY_CUBE_EMPTY;
     public static int MERCURY_CUBE_FULL;
+    public static int MERCURY_ENGINE;
       
 }

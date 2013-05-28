@@ -46,6 +46,7 @@ public class Strings {
     public static final String CONDENSER_NAME = "condenser";
     public static final String MERCURY_CUBE_EMPTY_NAME = "mercuryCubeEmpty";
     public static final String MERCURY_CUBE_FULL_NAME = "mercuryCubeFull";
+    public static final String MERCURY_ENGINE_NAME = "mercuryEngine";
 
     /* Item name constants */
     public static final String MERCURY_PIPE_NAME = "mercuryPipe";

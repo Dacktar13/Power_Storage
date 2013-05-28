@@ -23,5 +23,8 @@ public class Reference {
     public static final String DEPENDENCIES = "required-after:Forge@[7.8.0.712,)";
     public static final String SERVER_PROXY_CLASS = "powerstorage.core.proxy.CommonProxy";
     public static final String CLIENT_PROXY_CLASS = "powerstorage.core.proxy.ClientProxy";
+    
+    /* Buildcraft related image constants */
+    public static String TEXTURE_PATH_BLOCKS = "/mods/powerstorage/textures/blocks";
 
 }

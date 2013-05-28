@@ -2,6 +2,7 @@ package powerstorage.block;
 
 
 import powerstorage.PowerStorage;
+import powerstorage.core.CreativeTabPowerStorage;
 import net.minecraft.block.BlockStationary;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IconRegister;
@@ -26,6 +27,7 @@ public class BlockMercuryLiquidStill extends BlockStationary implements ILiquid 
 
         setHardness(100F);
         setLightOpacity(3);
+        setCreativeTab(CreativeTabPowerStorage.tabPowerStorage);
     }
     
     @Override
@@ -36,7 +38,7 @@ public class BlockMercuryLiquidStill extends BlockStationary implements ILiquid 
 
     @Override
     public int getRenderType() {
-        return PowerStorage.mercuryLiquidModel;
+        return PowerStorage.MERCURYLIQUIDMODEL;
     }
 
     
